@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: orange;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.section--img {
+  box-sizing: border-box;
+  padding: 1em;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.section--img img {
+  width: 3em;
+  height: 20em;
+  border-radius: 1.5em;
+}
+
+/*# sourceMappingURL=style.css.map */

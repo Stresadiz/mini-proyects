@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: orange;
+}
+
+//  Section
+
+.section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &--img{
+        box-sizing: border-box;
+        padding: 1em;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        img{
+            width: 3em;
+            height: 20em;
+            border-radius: 1.5em;
+        }
+    }
+}
