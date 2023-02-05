@@ -15,6 +15,13 @@ body{
     transform: rotate(0);
     transform-origin: 0% 0%;
     transition: 1.5s;
+    height: 100%;
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        min-height: max-content;
+    }
 }
 
 .menu{
@@ -33,10 +40,6 @@ body{
     height: 2em;
     background-color: white;
 }
-.text{
-    padding: 1em;
-}
-
 .text__title{
     padding: 0.2em 0;
 }
