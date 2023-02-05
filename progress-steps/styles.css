@@ -14,7 +14,6 @@ body{
 
 .container{
     margin: 1em;
-    border: 1px solid white;
     padding: 1em;
     position: relative;
 }
@@ -27,20 +26,18 @@ body{
     top: auto;
     margin: auto 10% auto 10%;
     z-index: -1;
-    border: 1px solid white;
 }
 
 #bar2{
     height: 0.5em;
     position: absolute;
-    background-color: rgb(185, 0, 0);
+    background-color: rgb(184, 200, 180);
     width: 0%;
     display: block;
     top: auto;
     left: 13%;
     margin: 0;
     z-index: -1;
-    border: 1px solid white;
 }
 
 .container--point{
@@ -51,16 +48,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
 }
 
 .point{
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    background: rgb(255,0,0);
+    background: rgb(63, 73, 63);
     display: block;
     margin: auto;
+    transition: 1s;
 }
 
 .container--txt{
@@ -90,10 +87,9 @@ body{
 
 .btn{
     padding: 1em;
-    margin: 1em;    
-    background: rgb(255,0,0);
-    background: linear-gradient(324deg, rgba(255,0,0,1) 0%, rgba(98,148,213,1) 100%);
+    margin: 1em; 
     border: 1px solid white;
+    border-radius: 25%;
 }
 
 .btn:hover{
@@ -102,5 +98,6 @@ body{
     cursor: pointer;
 }
 .active{
-    background: rgb(0, 255, 55) !important;
+    background: rgb(255, 255, 255) !important;
+    transition: 1s;
 }
