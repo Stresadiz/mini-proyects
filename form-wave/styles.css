@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+}
+
+body{
+    color: rgba(8, 1, 1, 0.883);
+    height: 80.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(172, 226, 226);
+}
+
+.container{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    padding: 2em 1em;
+    box-shadow: inset;
+
+    -moz-box-shadow:  0px 0px 100px 3px rgba(0, 0, 0, 0.627);
+    -webkit-box-shadow:  0px 0px 100px 3px rgba(0, 0, 0, 0.627);
+    box-shadow: 0px 0px 100px 3px rgba(0, 0, 0, 0.627);
+}
+
+.form__body{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titles{
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    
+}
+
+.float{
+    position: absolute;
+    bottom: -2.2em;
+    left: 0.9em;
+    margin: auto;
+    font-size: small;
+    opacity: 0.5;
+}
+
+.float1{
+    position: absolute;
+    bottom: 0.5em;
+    opacity: 0.8 !important;
+}
+
+#UserName{
+    border: none;
+    background-color: #0099ffb4;
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    padding: 1em 0em;
+    width: 100%;
+}
+
+#UserPass{
+    border: none;
+    background-color: #0099ffb4;
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    padding: 1em 0em;
+    width: 100%;
+}
+
+.waves{
+    position: relative;
+    height: 10%;
+}
+
+.wave{
+    position: absolute;
+    bottom: -1em;
+    animation: wave 1s infinite linear ;
+}
+
+.wave:nth-child(1){
+    position: absolute;
+    bottom: -5.2em;
+    animation: wave 5s infinite linear ;
+    opacity: 0.5;
+}
+
+.wave:nth-child(2){
+    position: absolute;
+    bottom: -2em;
+    animation: wave 6s infinite linear ;
+    opacity: 0.5;
+}
+
+.wave:nth-child(3){
+    position: absolute;
+    bottom: -12em;
+    animation: wave2 5s infinite linear ;
+    opacity: 0.7;
+}
+
+.wave:nth-child(4){
+    position: absolute;
+    bottom: -4em;
+    animation: wave2 10s infinite linear ;
+    opacity: 1;
+}
+
+.wave:nth-child(5){
+    position: absolute;
+    bottom: -10em;
+    animation: wave2 10s infinite linear ;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0%{
+        transform: translateX(-100vh);
+    }
+    100%{
+        transform: translateX(100vh);
+    }
+}
+
+@keyframes wave2 {
+    0%{
+        transform: translateX(100vh);
+    }
+    100%{
+        transform: translateX(-100vh);
+    }
+}
+
+.btn{
+    padding: 1em;
+    width: 100%;
+    background-color: #0099ff;
+    border: 1px solid transparent;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    transition: 1s;
+    cursor: pointer;
+    border: 1px solid gray;
+}
