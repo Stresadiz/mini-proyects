@@ -4,6 +4,12 @@
   ],
   "hints": {
     "axe/structure": "off",
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
+    ]
   }
 }
