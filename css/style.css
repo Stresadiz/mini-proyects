@@ -3,57 +3,94 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #232525;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+}
+
+nav {
+  height: 6em;
+  background-color: #000000;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: sticky;
+  flex-direction: column;
+  width: 100%;
+}
+.nav__title {
+  font-size: xx-large;
+}
+.nav__subtitle {
+  opacity: 0.5;
 }
 
 .container {
-  margin: 1em;
-  padding: 1em;
-  height: 100%;
-}
-
-.container--title {
-  text-align: center;
-}
-
-.proyects {
-  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1em;
 }
-.proyects--list {
-  list-style: none;
+
+.card {
+  padding: 1em;
+  background-color: #000000;
+  margin: 1em;
+  width: 15em;
 }
-.proyects--item {
+.card__subtitles {
+  opacity: 0.5;
+  padding: 0.5em 0;
+  font-style: italic;
+}
+.card__body {
+  padding: 0.5em 0;
+}
+.card__txt {
+  opacity: 0.8;
+}
+.card__btn {
+  padding: 1em 0;
+}
+.card:hover {
+  -moz-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+  -webkit-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+  box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+}
+
+.btn {
+  color: rgba(0, 0, 0, 0.661);
+  background-color: white;
   padding: 0.5em;
-  margin: 1em;
+  text-decoration: none;
+  font-size: small;
 }
-.proyects--item:hover {
-  background-color: rgba(220, 214, 207, 0.691);
-  transition: 1s;
-}
-.proyects--item:hover .proyects--links {
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(133, 125, 125, 0.665);
   color: white;
   transition: 1s;
 }
-.proyects--item:hover .proyects--date {
-  color: black;
-}
-.proyects--links {
-  text-decoration: none;
-  color: rgba(220, 214, 207, 0.834);
-}
-.proyects--date {
-  color: rgb(104, 100, 100);
-  font-size: small;
-  font-style: italic;
-  padding: 0.2em 1em;
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 1em;
 }
 
-.about {
+.links {
+  color: rgba(0, 0, 0, 0.5725490196);
+  text-decoration: none;
   padding: 1em;
-  color: rgba(220, 214, 207, 0.691);
+}
+.links:hover {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
