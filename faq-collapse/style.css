@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+.container{
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collapse{
+    padding: 1em;
+    width: 80%;
+}
+
+.list--faq{
+    list-style: none;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(18, 18, 18, 0.75);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(18, 18, 18, 0.75);
+    box-shadow: 0px 0px 28px 0px rgba(18, 18, 18, 0.75);
+    padding: 0;
+}
+
+.item{
+    border: 1px solid rgba(255, 255, 255, 0.107);
+    padding: 0.5em;
+    background-color: rgba(255, 253, 253, 0.083);
+}
+
+.item:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.187);
+}
+
+.item__title{
+    text-transform: capitalize;
+    padding: 0.2em 0;
+    font-size: larger;
+}
+
+.item__text{
+    display: none;
+    color: rgb(187, 205, 220);
+}
+
+.active{
+    display: block;
+}
