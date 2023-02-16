@@ -3,44 +3,76 @@
 }
 
 body{
-    background-color: black;
-    color: white;
+  background-color: rgba(184, 174, 174, 0.368627451);
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
+header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  height: 5em;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.431372549);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+}
+.nav__title {
+  font-size: 2.5em;
+  font-weight: 100;
+  color: rgba(16, 44, 184, 0.999);
+}
+.nav__subtitle {
+  color: rgb(0, 0, 1);
+}
+
+
 .container{
-    border:1px solid white;
-    padding: 1em;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-main{
-    padding: 1em;
+    background-color: white;
+    padding: 1em 0;
+    -moz-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+    box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
 }
 
-.main__title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding: 1em;
+main{
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
   #search{
   font-size: 16px;
   line-height: 1.5;
   border: none;
-  background: #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-size: 20px 20px;
+  background: rgb(255, 153, 0);
   border-radius: 5px;
   width: 5em;
   padding: .1em 4em .1em 0.5em;
   margin: 0 0.5em;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifS;
   } 
   
   #search::placeholder{
-    color: #838D99;
+    color: #ffffff;
   }
   
   #search:focus {
@@ -59,4 +91,30 @@ main{
     width: 1em;
     background-position: center;
     padding: 0.1em;
+    filter: saturate(20);
+}
+
+#img:hover{
+  cursor: pointer;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.431372549);
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
+}
+
+.links {
+  color: rgba(0, 0, 0, 0.5725490196);
+  text-decoration: none;
+  padding: 1em;
+}
+.links:hover {
+  color: #000000;
 }
