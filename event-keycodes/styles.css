@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    margin-top: 25%;
+    margin-bottom:25% ;
+}
+
+@media screen and (max-width:1000px) {
+    .container{
+        padding: 5em 0;
+    }
+}
+
+.card{
+    position: absolute;
+    height: 8em;
+    padding: 1em;
+    top: 1em;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 70%;
+    background-color: rgb(15, 255, 255);
+    background: linear-gradient(to top, rgb(0, 0, 0), blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+    justify-content: center;
+}
+
+
+#insert{
+    display: contents;
+}
+.card__title{
+    padding: 0.5em 2em; 
+    background-color: rgba(128, 128, 128, 0.19);
+}
+
+.keycodes{
+    margin: 0;
+    padding: 2em 1em;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.char{
+    padding: 0.2em;
+    height: 3em;
+    margin: 0.3em;
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.char__name{
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 0.2em;
+    display: contents;
+}
+
+.event{
+    color: rgb(82, 139, 139);
+}
