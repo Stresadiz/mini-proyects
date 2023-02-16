@@ -4,22 +4,32 @@
 
 // colors
 
-$color-bg:#232525;
-$color-font:#fff;
-$color-nav:#000000;
-$color-card:#000000;
-$color-card-font:#383030;
+$color-bg:#b8aeae5e;
+$color-font:#000000;
+$color-nav:rgb(255, 255, 255);
+$color-card:#ffffff;
+$color-card-2:#659ad2;
+$color-card-font:#000000;
 
 body{
     background-color: $color-bg;
     color: $color-font;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow: scroll;
+}
+
+header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav{
-    height: 6em;
+    height: 5em;
     background-color: $color-nav;
+    border-bottom:1px solid #0000006e;
 }
 
 .nav{
@@ -27,16 +37,18 @@ nav{
     justify-content: center;
     align-items: center;
     height: 100%;
-    position: sticky;
     flex-direction: column;
     width: 100%;
 
+
     &__title{
-        font-size: xx-large;
+        font-size: 2.5em;
+        font-weight: 100;
+        color: rgba(16, 44, 184, 0.999);
     }
 
     &__subtitle{
-        opacity: 0.5;
+        color: rgb(0, 0, 1);
     }
 
 }
@@ -55,11 +67,21 @@ nav{
     //border-radius: 20px;
     margin: 1em;
     width: 15em;
+    height: 14em;
+    -moz-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+    box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+    color: #000000;
+    position: relative;
 
     &__subtitles{
-        opacity: 0.5;
-        padding: 0.5em 0;
-        font-style: italic;
+        padding: 1em 0;
+        color: rgb(15, 118, 144);
+    }
+
+    &__title{
+        font-size: x-large;
+        font-weight: 200;
     }
 
     &__body{
@@ -68,23 +90,33 @@ nav{
 
     &__txt{
         opacity: 0.8;
+        line-height: 1.5em;
+        padding: 0em 0 2em 0;
+        height: 2.5em;
+        text-overflow:ellipsis;
+        overflow:hidden; 
+        overflow-wrap: break-word;
     }
 
     &__btn{
-        padding: 1em 0;
+        position: absolute;
+        //padding: 1em 0;
+        bottom: 2em;
     }
 
-    &:hover{
-        -moz-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
-        -webkit-box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
-        box-shadow: 0px 0px 13px 3px rgba(113, 111, 111, 0.57);
+    &--variation{
+        background-color: $color-card-2 !important;
+
+        .card__subtitles{
+            color: white !important;
+        }
     }
 }
 
 .btn{
-    color: rgba(0, 0, 0, 0.661);
-    background-color: white;
-    padding: 0.5em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 39, 156);
+    padding: 0.8em 2em;
     text-decoration: none;
     font-size: small;
     //border: 1px solid rgb(0, 0, 0);
@@ -92,8 +124,7 @@ nav{
 
     &:hover{
         cursor: pointer;
-        background-color: rgba(133, 125, 125, 0.665);
-        color: white;
+        background-color: rgba(255, 172, 7, 0.859);
         transition: 1s;
     }
 }
@@ -103,6 +134,7 @@ footer{
     justify-content: center;
     background-color: #fff;
     padding: 1em;
+    border-top:1px solid #0000006e;
 }
 
 .links{
