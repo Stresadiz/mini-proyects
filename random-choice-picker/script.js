@@ -1,16 +1,44 @@
 const text = document.getElementById("text");
+const btns = document.querySelector(".btns");
 
-const btns = document.getElementsByClassName("btns")[0];
+let array = []; 
+let i = 0;
 
-text.addEventListener('keypress', function (event) {
+text.addEventListener('keypress', (event) => {
 
-    let textValue = text.value;
+  if (event.key === "," ) {
 
-    if (event.keyCode == 44) {
+    textArea = text.value;
 
-    btns.innerHTML = 
-    `
-    <div class="btn">${textValue.split(",")}</div>
-    `;
+    array = textArea.split(",");
+
+    const btn = document.createElement("div");
+
+    btn.innerHTML = `<div class="btn">${array[i]}</div>`;
+
+    btns.appendChild(btn);
+
+    i++;
   }
+
+  if (event.key === "Enter") {
+    
+    textArea = text.value;
+
+    array = textArea.split(",");
+
+    const btn = document.createElement("div");
+
+    let lastIndex = array[array.length - 1];
+
+    btn.innerHTML = `<div class="btn">${lastIndex}</div>`;
+
+    btns.appendChild(btn);
+
+    text.value = "";
+
+    array = {};
+
+  }
+
 })
