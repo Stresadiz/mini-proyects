@@ -1,20 +1,20 @@
+const btn = document.querySelector(".btn");
 const lines = document.querySelectorAll(".line");
-
+const nav = document.querySelector(".navbar__list");
 const items = document.querySelectorAll(".item");
 
-const btn = document.querySelector(".btn")
-
-btn.addEventListener("click", (e) => {
-
-    btn.classList.toggle("btn-origin");
+btn.addEventListener("click", () => {
 
     lines.forEach(line => {
         line.classList.toggle("line--var");
         line.style.transition = "0.5s";
     });
 
+    nav.classList.toggle("nav--var");
+    nav.style.transition = "1s";
+
     items.forEach(item => {
-        item.classList.toggle("non-active");
-        item.style.transition = "1s";
+        item.classList.toggle("item--var");
+        item.style.transition = "0.5s";
     });
 })
