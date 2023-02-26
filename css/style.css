@@ -7,6 +7,7 @@ body {
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  overflow: scroll;
 }
 
 header {
@@ -42,7 +43,8 @@ nav {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  margin: auto;
   padding: 1em;
 }
 
