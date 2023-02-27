@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(6, 153, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap:0.5em;
+
+}
+
+.container__subtitle{
+    font-weight: 200;
+    font-size: 1em;
+}
+
+.bottle--main{
+    height: 22em;
+    background-color: white;
+    width: 11em;
+    border: 1px solid black;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.remained{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 11em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.lts{
+    color: black;
+    font-size: 1em;
+}
+
+.remained__text{
+    color: rgb(108, 100, 100);
+    font-size: 1em;
+}
+
+.complete{
+    background-color: rgb(38, 78, 162);
+    width: 100%;
+    height: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 15em;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+.bottle{
+    height: 5em;
+    width: 2.7em;
+    margin: 0.5em 0;
+    background-color: white;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fill{
+    background-color: rgb(57, 154, 199);
+    transition: 1s;
+}
+
+.bottle:hover{
+    cursor: pointer;
+}
+
+.bottle__text{
+    color: black;
+    text-align: center;
+}
+
+.subtitle{
+    padding: 1em 0 0 0;
+}
