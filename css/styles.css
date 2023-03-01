@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    border: 1px solid white;
+    height: 100%;
+}
+
+/* 
+        Nav Styles
+*/
+
+nav{
+    padding: 5em 2em;
+    background-color: black;
+    height: 20em;
+    position: sticky;
+    top: 0;
+}
+
+.nav__list{
+    position: relative;
+    list-style: none;
+    transform: rotate(90deg);
+    transform-origin: center left;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 0em;
+}
+
+.item{
+    display: inline;
+}
+
+.link{
+    display: inline-flex;
+    gap: 0.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.link:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.link:hover > .icon{
+    color: rgb(104, 31, 104);
+    transition: 1s ;
+}
+
+.icon{
+    color: rgb(90, 80, 90);
+}
+
+.active{
+    opacity: 1;
+}
+
+.active > .icon{
+    color: rgb(235, 79, 235);
+}
+
+/* 
+        Main Styles
+*/
+
+.main{
+    padding: 2em 1em;
+    background-color: rgb(4, 4, 4);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* 
+        Banner Styles
+*/
+
+.banner{
+    min-height: 30em;
+    background-color: rgba(42, 41, 41, 0.199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__body{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+}
+
+.banner__title{
+    text-align: center;
+    padding: 0.5em;
+    text-transform: capitalize;
+    font-size: 4em;
+}
+
+.banner__text{
+    text-align: center;
+    font-weight: 600;
+    color: rgb(158, 155, 155);
+    width: 80%;
+}
+
+.banner--main{
+    background-image: url("/img/JavaScript\ frameworks-amico.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner--about{
+    background-image: url("/img/banner.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
+    Section Styles
+*/
+
+section{
+    padding: 1em;
+    background-color: rgba(42, 41, 41, 0.199);
+}
+
+.section__title{
+    font-size: 2.5em;
+    line-height: 1.8em;
+    padding: 0 0.5em;
+}
+
+.section__subtitle{
+    font-weight: 200;
+    opacity: 0.5;
+    padding: 0 1.2em;
+}
+
+.section__body{
+    padding: 3em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+
+/*
+    Card Styles
+*/
+
+.card{
+    padding: 1em 1em;
+    position: relative;
+    height: 20em;
+    width: 20em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0 0 10px 2px black;
+    background-color: rgba(0, 0, 0, 0.221);
+}
+
+.card:hover{
+    box-shadow: 0 0 15px 1px rgb(38, 37, 38);
+    transition: 0.5s;
+}
+
+.card__title{
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 2em;
+}
+
+.card__subtitle{
+    color: rgb(150, 42, 180);
+    font-size: small;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card__text{
+    line-height: 1.5em;
+    color: rgb(131, 125, 125);
+}
+
+
+.btn{
+    position: absolute;
+    bottom: 3em;
+    right: 1em;
+    color: rgb(35, 34, 34);
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    font-weight: 600;
+    background-color: rgb(193, 193, 193);
+
+}
+
+.btn:hover{
+    background-color: rgb(251, 249, 249);
+    transition: 0.5s;
+}
+
+/*
+    Top Styles
+*/
+
+.top{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.icon--top{
+    font-size: 3em;
+}
