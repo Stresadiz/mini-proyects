@@ -127,13 +127,13 @@ nav{
 }
 
 .banner--main{
-    background-image: url("/img/JavaScript\ frameworks-amico.svg");
+    background-image: url("img/JavaScript\ frameworks-amico.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .banner--about{
-    background-image: url("/img/banner.svg");
+    background-image: url("img/banner.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
