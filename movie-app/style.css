@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(38 33 67);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*
+
+  Search Widget
+
+*/
+
+.search{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    padding: 1em 2em;
+    background-color: rgb(53 54 96);
+}
+
+.width--var{
+    width: 0 !important;
+    padding: 0.1em 0em !important;
+  }
+
+#search{
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  background: rgb(24, 20, 45);
+  border-radius: 5px;
+  width: 5em;
+  padding: .1em 4em .1em 0.5em;
+  margin: 0 0.5em;
+  color: white;
+  } 
+  
+  #search::placeholder{
+    color: #aea5a5;
+  }
+  
+  #search:focus {
+    outline: none;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+  }
+
+#img{
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path fill='white' d='M13.22 14.63a8 8 0 1 1 1.41-1.41l4.29 4.29a1 1 0 1 1-1.41 1.41l-4.29-4.29zm-.66-2.07a6 6 0 1 0-8.49-8.49 6 6 0 0 0 8.49 8.49z'></path></svg>");
+    height: 1em;
+    width: 1em;
+    background-position: center;
+    padding: 0.1em;
+}
+
+#img:hover{
+  cursor: pointer;
+}
+
+
+/*    
+
+    Card Style
+
+*/
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    gap: 1em;
+}
+
+.card{
+  width: 19em;
+  height: 25em;
+  background-color: rgb(53 54 96);
+  margin: auto;
+  position: relative;
+}
+
+.card:hover > .overview {
+  height: 20em;
+  transition: 1s;
+}
+
+.card:hover > .card__img {
+  transition: 1s;
+  filter: brightness(0.5);
+}
+
+.card__img{
+  height: 18em;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-image: url(https://es.web.img3.acsta.net/pictures/23/01/16/17/21/5753145.jpg);
+  background-size: cover;
+}
+
+.card__body{
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card__title{
+  font-size: larger;
+  color: white;
+  width: 50%;
+  font-weight: 200;
+}
+
+.rate{
+  background-color: rgb(38 33 67);
+  color: orange;
+}
+
+.overview{
+  background-color: white;
+  color: black;
+  height: 0em;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.overview__title{
+  padding: 1em;
+}
+
+.overview__text{
+  padding: 0 1em 1em 1em;
+  text-overflow: ellipsis;
+}
